@@ -1,26 +1,11 @@
-import SliderComponent from "@/component/SliderComponent";
-
-const dataSlider = [
-  {
-    name: "Slider 1",
-  },
-  {
-    name: "Slider 2",
-  },
-  {
-    name: "Slider 3",
-  },
-  {
-    name: "Slider 4",
-  },
-  {
-    name: "Slider 5",
-  },
-  {
-    name: "Slider 6",
-  },
-];
+import Link from "next/link";
 
 export default function Home() {
-  return <SliderComponent data={dataSlider} />
+  return (
+      <div style={{display: "flex", justifyContent: "center", background: "white", height: "100vh", alignItems: "center"}}>
+          <button style={{background: "red", height: 100, width: 100}}>
+              <Link replace={false} href="https://demo-sso.tinasoft.io/login" target="_blank">Home</Link>
+          </button>
+      </div>
+  )
 }
